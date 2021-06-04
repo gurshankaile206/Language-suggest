@@ -12,7 +12,7 @@
         <h1>Let's have you answer a few questions!</h1>
         <h2>Then we will match you with the programming language you should learn</h2>
 
-        <form id="currentPlace">
+        <form id="survey">
             <p>Please select where you're from:</p>
             <div id="firstQuestion">
                 <input type="radio" id="choice1" name="place" value="Portland" checked>
@@ -21,8 +21,19 @@
                 <input type="radio" id="choice2" name="place" value="Seattle">
                 <label for="choice2">Seattle</label>
                 
-                <input type="radio" id="choice3" name="place" value="SomewhereElse">
-                <label for="choice3">Somewhere Else</label>
+                <input type="radio" id="choice3" name="place" value="Other">
+                <label for="choice3">Other</label>
+            </div>
+            <p>What type of weather do you like best?</p>
+            <div id="secondQuestion">
+                <input type="radio" id="choice1" name="weather" value="Sunny">
+                <label for="choice1">Sunny</label>
+
+                <input type="radio" id="choice2" name="weather" value="Rainy">
+                <label for="choice2">Rainy</label>
+                
+                <input type="radio" id="choice3" name="weather" value="Grey">
+                <label for="choice3">Grey</label>
             </div>
             <div id="btn">
                 <button type="submit">Submit</button>
@@ -38,12 +49,12 @@
         <h1>We suggest you learn C#</h1>
         <p>It's an object-oriented programming language made by Microsoft!</p>
     </div>
-    <div id="javascript">
+    <div id="j">
         <h1>We suggest you learn Javascript</h1>
         <p>It's a language that can be used on both the front-end & back-end</p>
     </div>
     <div id="ruby">
-        <h1>Since you're from portland, we suggest you learn Ruby</h1>
+        <h1>we suggest you learn Ruby</h1>
     </div>
 </body>
 </html>

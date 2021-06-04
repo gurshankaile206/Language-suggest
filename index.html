@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/Bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/scripts.js"></script>
     <title>Drinks</title>
 </head>
 <body>
     <div class="container">
-    <div id="Questions">
         <h1>Let's have you answer a few questions!</h1>
-
         <h2>Then we will match you with the programming language you should learn</h2>
-        
-    </div>
 
-    <div id="C#">
+        <form>
+            <p>Please select where you're from:</p>
+            <div id="firstQuestion">
+                <input type="radio" id="choice1" name="live" value="Portland" checked>
+                <label for="choice1">Portland</label>
+
+                <input type="radio" id="choice2" name="live" value="Seattle">
+                <label for="choice2">Seattle</label>
+                
+                <input type="radio" id="choice3" name="live" value="Austin">
+                <label for="choice3">Austin</label>
+            </div>
+            <div id="btn">
+                <button type="submit">Submit</button>
+            </div>    
+        </form>
+        
+    
+
+    <div id="C">
         <h1>We suggest you learn C#</h1>
         <p>It's an object-oriented programming language made by Microsoft!</p>
     </div>
-    <div id="Javascript">
+    <div id="javascript">
         <h1>We suggest you learn Javascript</h1>
         <p>It's a language that can be used on both the front-end & back-end</p>
+    </div>
+    <div id="ruby">
+        <h1>Since you're from portland, we suggest you learn Ruby</h1>
     </div>
 </body>
 </html>

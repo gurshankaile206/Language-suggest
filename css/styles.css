@@ -12,4 +12,17 @@
 
 .container {
     text-align: center;
+    margin-top: 20px;
+    background-color: lemonchiffon;
+    padding: 20px;
+}
+
+p {
+    font-style: oblique;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: initial;
+    font-size: 30px;
 }

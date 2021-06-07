@@ -1,17 +1,16 @@
 $(document).ready(function() {
 $("form#survey").submit(function(event) { 
+    event.preventDefault();
     const city = $("input:radio[name=place]:checked").val();
     if (city === "Portland") {
-        $("#ruby").show();
+        $("#ruby").toggle();
     } else if (city === "Seattle") {
-        $("#c").show();
+        $("#c").toggle();
     } else if (city === "Other") {
-        $("#j").show();
+        $("#j").toggle();
     } else {
         alert("No Value Selected!");
     }
-
-    event.preventDefault();
 });
 });
 

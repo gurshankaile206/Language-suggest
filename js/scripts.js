@@ -3,11 +3,17 @@ $("form#survey").submit(function(event) {
     event.preventDefault();
     const city = $("input:radio[name=place]:checked").val();
     if (city === "Portland") {
-        $("button#ruby").click().toggle();
+        $("#ruby").show();
+        $("#c").hide();
+        $('#j').hide();
     } else if (city === "Seattle") {
-        $("#c").toggle();
+        $("#c").show();
+        $("#ruby").hide();
+        $("#j").hide();
     } else if (city === "Other") {
-        $("#j").toggle();
+        $("#j").show();
+        $("#ruby").hide();
+        $("#c").hide();
     } else {
         alert("No Value Selected!");
     }
